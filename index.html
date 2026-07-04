@@ -1,11 +1,280 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NuveXa</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daraz Landing Page Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="bg-[#F5F5F5]">
+    <div class="bg-brand pb-10 bg">
+      <nav class="max-w-[1180px] mx-auto">
+        <div class="text-white">
+          <ul class="flex gap-7 justify-end">
+            <li>
+              <a
+                class="text-white hover:text-gray-500 transition-all duration-300"
+                href="https://www.daraz.pk/know-more/"
+                >Sell on Daraz</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-gray-500 transition-all duration-300"
+                href="https://www.daraz.pk/help-center/home"
+                >Customer Care</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-gray-500 transition-all duration-300"
+                href="https://www.daraz.pk/help-center/home"
+                >Track My Order</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-gray-500 transition-all duration-300"
+                href="https://www.daraz.pk/help-center/home"
+                >Become A Seller</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-6">
+          <div class="flex gap-12">
+            <img
+              class="w-[170px] h-[60px]"
+              src="./images/daraz-logo.png"
+              alt="logo"
+            />
+
+            <!-- search field form  -->
+            <form class="flex bg-white w-1/2 h-[50px]">
+              <input
+                type="text"
+                placeholder="Search Products"
+                class="w-full outline-none p-4"
+                required
+              />
+              <button
+                type="submit"
+                class="text-orange-500 bg-orange-200 w-[60px] h-[50px]"
+              >
+                <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+              </button>
+            </form>
+            <button class="relative">
+              <i class="fa-solid fa-cart-shopping text-3xl"></i>
+              <div
+                class="bg-white p-1 rounded-full absolute -right-1 -top-1 text-[7px]"
+              >
+                1
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="max-w-[1180px] mx-auto flex">
+      <div class="w-[80%] relative">
+        <img class="h-[380px]" src="./images/slider-image.png" alt="banner" />
+        <button
+          class="absolute left-0 top-1/2 bg-gray-700/50 w-[40px] h-[40px] rounded-full text-white hover:text-gray-500 transition-all duration-300"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          class="absolute right-0 top-1/2 bg-gray-700/50 w-[40px] h-[40px] rounded-full text-white hover:text-gray-500 transition-all duration-300"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- right section -->
+      <div
+        class="w-[20%] bg-gradient-to-b from-[#FFFAF7] to-orange-400 p-4 space-y-2"
+      >
+        <div class="flex gap-4 items-center">
+          <img
+            class="w-[50px]"
+            src="./images/small-logo.png"
+            alt="daraz-logo"
+          />
+          <div>Get The App</div>
+        </div>
+        <div class="bg-gradient-to-b from-orange-400 to-pink-600 p-1">
+          <div class="border-[0.2px] border-white/50">
+            <div class="flex items-center text-white">
+              <i class="fa-solid fa-star"></i> 4.8 Rated
+            </div>
+            <div class="py-2 px-8 space-y-2">
+              <div class="text-center text-white mb-4">Download App</div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="bg-white w-[40px] h-[40px] flex justify-center items-center rounded-[10px]"
+                >
+                  <i class="fa-solid fa-truck text-2xl"></i>
+                </div>
+                <span>Free Delivery</span>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div
+                  class="bg-white w-[40px] h-[40px] flex justify-center items-center rounded-[10px]"
+                >
+                  <i class="fa-solid fa-truck text-2xl"></i>
+                </div>
+                <span>Free Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div
+            class="w-[44%] h-[80px] bg-white flex items-center justify-center"
+          >
+            <img src="./images/Screenshot 2026-07-03 163936.png" alt="QR" />
+          </div>
+          <div class="flex flex-col gap-4">
+            <button
+              class="px-2 py-1 border rounded-[14px] text-sm hover:text-gray-500 transition-all duration-300"
+            >
+              Google Play
+            </button>
+            <button
+              class="px-2 py-1 border rounded-[14px] text-sm hover:text-gray-500 transition-all duration-300"
+            >
+              App Store
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <div class="w-full mt-5 mb-10">
+        <img src="./images/3rd ig.png" alt="" />
+      </div>
+      <button class="">Add To Card</button>
+    </div>
+
+    <!-- products section -->
+    <section class="max-w-[1180px] mx-auto mt-5">
+      <h2 class="text-3xl font-light">Flash Sale</h2>
+      <div
+        class="flex justify-between bg-white p-4 my-3 border-b border-gray-300"
+      >
+        <div style="color: var(--daraz-brand-color)">On Sale Now</div>
+        <button
+          class="rounded-[10px] py-1 px-3"
+          style="
+            color: var(--daraz-brand-color);
+            border: var(--daraz-brand-color) 1px solid;
+          "
+        >
+          Shop All Products
+        </button>
+      </div>
+
+      <!-- products -->
+      <div class="grid grid-cols-5 gap-4 justify-between">
+        <div class="">
+          <div class="w-full h-[185px]">
+            <img
+              class="w-full h-full object-cover"
+              src="./images/product-image.png"
+              alt="umbrella"
+            />
+          </div>
+          <div class="bg-gray-300/50 p-2">
+            <div>Lightweight 1200gram Umbrella</div>
+            <div style="color: var(--daraz-brand-color)">590</div>
+            <div class="flex gap-4">
+              <div class="line-through">999</div>
+              <div>48%</div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="w-full h-[200px]">
+            <img
+              class="w-full h-full object-cover"
+              src="./images/earhone.png"
+              alt="umbrella"
+            />
+          </div>
+          <div class="bg-gray-300/50 p-2">
+            <div>Bolder Earphone</div>
+            <div style="color: var(--daraz-brand-color)">1440</div>
+            <div class="flex gap-4">
+              <div class="line-through">3000</div>
+              <div>48%</div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="w-full h-[200px]">
+            <img
+              class="w-full h-full object-cover"
+              src="./images/perfume.png"
+              alt="perfume"
+            />
+          </div>
+          <div class="bg-gray-300/50 p-2">
+            <div>Channel perfume</div>
+            <div style="color: var(--daraz-brand-color)">9000</div>
+            <div class="flex gap-4">
+              <div class="line-through">13000</div>
+              <div>19%</div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="w-full h-[200px]">
+            <img
+              class="w-full h-full object-cover"
+              src="./images/shoe.png"
+              alt="shoe"
+            />
+          </div>
+          <div class="bg-gray-300/50 p-2">
+            <div>Red Shoe</div>
+            <div style="color: var(--daraz-brand-color)">730</div>
+            <div class="flex gap-4">
+              <div class="line-through">1500</div>
+              <div>48%</div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="w-full h-[200px]">
+            <img
+              class="w-full h-full object-cover"
+              src="./images/watch.png"
+              alt="Watch"
+            />
+          </div>
+          <div class="bg-gray-300/50 p-2">
+            <div>Watch</div>
+            <div style="color: var(--daraz-brand-color)">1100</div>
+            <div class="flex gap-4">
+              <div class="line-through">1599</div>
+              <div>48%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
